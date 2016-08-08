@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Anxiety Awareness Quiz</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:url"           content="http://www.kristenkriens.com/anxiety-quiz" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Anxiety Awareness Quiz" />
+	<meta property="og:description"   content="Take the Anxiety Awareness Quiz!" />
+	<meta property="og:image"         content="http://www.kristenkriens.com/anxiety-quiz/images/image1.png" />
+	<link type="image/png" href="images/favicon.png" rel="icon">
+	<script src="https://use.fontawesome.com/07dc8c3210.js"></script>
+	<link href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400,700" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>
+		// facebook link script (also some in head section above)
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<header>
+		<div class="wrapper">
+			<h1><a href="index.html">Anxiety Awareness Quiz</a></h1>
+		</div>
+	</header>
+	<main class="wrapper">
+		<section class="card home">
+			<div class="card-inner-wrapper">
+				<div class="image image1">
+					<img src="images/image1.png" alt="Drawing of a woman looking anxious, clenching her hands and holding a cloth">
+				</div>
+				<h2>What are Anxiety Disorders?</h2>
+				<p>We all feel worried or nervous sometimes. ​However, when regular feelings of anxiety begin to seriously impact our lives, including how we think, feel, and act that can be a sign of an anxiety disorder.</p>
+				<p>Do you think you know a lot about anxiety ​disorders? By taking this short quiz and sharing it around, you'll be helping bring awareness and destigmatize a very common problem that no one really talks about.</p>
+				<button class="start button">Start the Quiz!</button>
+			</div>
+		</section>
+		<form action="" class="quiz hidden">
+			<section class="card section1">
+				<fieldset class="question question1">
+					<div class="card-inner-wrapper">
+						<div class="image image2">
+							<img src="images/image2.png" alt="Pair of hands nervously picking at cuticles, displaying physical and mental anxiety symptoms">
+						</div>
+						<h2>Anxiety disorders only affect sufferers mentally, not physically.</h2>
+						<div class="question-div">
+							<label for="1a" class="button">True</label>
+							<input type="radio" name="question1" id="1a" value="wrong">
+							<label for="1b" class="button">False</label>
+							<input type="radio" name="question1" id="1b" value="correct">
+						</div>
+					</div>
+				</fieldset>
+				<div class="answer answer1 hidden">
+					<div class="card-inner-wrapper">
+						<div class="image image2">
+							<img src="images/image2.png" alt="Pair of hands nervously picking at cuticles, displaying physical and mental anxiety symptoms">
+						</div>
+						<h3 class="result"></h3>
+						<h2>False</h2>
+						<p>A common misconception about anxiety is that sufferers only experience mental (or cognitive) symptoms. In reality, anxiety can be so much more. Many physical symptoms such as a racing heart beat, shortness of breath, excessive sweating, panic attacks, etc. are experienced by people with anxiety every day. <a href="http://www.camh.ca/en/hospital/health_information/a_z_mental_health_and_addiction_information/anxiety_disorders/Pages/Anxiety_Disorders.aspx" target="_blank" class="source">Source</a></p>
+						<button class="next button">Next Question</button>
+					</div>
+				</div>
+			</section>
+			<section class="card section2 hidden">
+				<fieldset class="question question2">
+					<div class="card-inner-wrapper">
+						<div class="image image3">
+							<img src="images/image3.png" alt="Anxious and sad young woman, looking down with hand in her hair">
+						</div>
+						<h2>How are anxiety disorders commonly treated?</h2>
+						<div class="question-div">
+							<label for="2a" class="button">Medication</label>
+							<input type="radio" name="question2" id="2a" value="wrong">
+							<label for="2b" class="button">Therapy</label>
+							<input type="radio" name="question2" id="2b" value="wrong">
+							<label for="2c" class="button">Support groups</label>
+							<input type="radio" name="question2" id="2c" value="wrong">
+							<label for="2d" class="button">All of these</label>
+							<input type="radio" name="question2" id="2d" value="correct">
+						</div>
+					</div>
+				</fieldset>
+				<div class="answer answer2 hidden">
+					<div class="card-inner-wrapper">
+						<div class="image image3">
+							<img src="images/image3.png" alt="Anxious and sad young woman, looking down with hand in her hair">
+						</div>
+						<h3 class="result"></h3>
+						<h2>All of these</h2>
+						<p>Not all anxiety disorders are treated the same way. However, they're all treated with some combination of support groups, medications, and <a href="http://www.camh.ca/en/hospital/health_information/a_z_mental_health_and_addiction_information/CBT/Pages/default.aspx" target="_blank">Cognitive Behavioural Therapy (CBT)</a>. The idea is to supplement medication with stress management tools and coping strategies that help suffers better manage their symptoms. <a href="http://www.cmha.ca/mental_health/understanding-anxiety-disorders/#" target="_blank" class="source">Source</a></p>
+						<button class="next button">Next Question</button>
+					</div>
+				</div>
+			</section>
+			<section class="card section3 hidden">
+				<fieldset class="question question3">
+					<div class="card-inner-wrapper">
+						<div class="image image4">
+							<img src="images/image4.png" alt="Tense and thin looking hand reaching upwards">
+						</div>
+						<h2>Approximately how many Canadians are diagnosed with anxiety each year?</h2>
+						<div class="question-div">
+							<label for="3a" class="button">Under 1 million</label>
+							<input type="radio" name="question3" id="3a" value="wrong">
+							<label for="3b" class="button">1-2 million</label>
+							<input type="radio" name="question3" id="3b" value="wrong">
+							<label for="3c" class="button">3-4 million</label>
+							<input type="radio" name="question3" id="3c" value="wrong">
+							<label for="3d" class="button">Over 4 million</label>
+							<input type="radio" name="question3" id="3d" value="correct">
+						</div>
+					</div>
+				</fieldset>
+				<div class="answer answer3 hidden">
+					<div class="card-inner-wrapper">
+						<div class="image image4">
+							<img src="images/image4.png" alt="Tense and thin looking hand reaching upwards">
+						</div>
+						<h3 class="result"></h3>
+						<h2>Over 4 million</h2>
+						<p>That's more than 12% of the population. Anxiety and anxiety disorders are much more common than many people think and need to be addressed. <a href="http://www.anxietycanada.ca/english/youth/welcome.htm" target="_blank" class="source">Source</a></p>
+						<button class="next button">Next Question</button>
+					</div>
+				</div>
+			</section>
+			<section class="card section4 hidden">
+				<fieldset class="question question4">
+					<div class="card-inner-wrapper">
+						<div class="image image5">
+							<img src="images/image5.png" alt="Drawing of person's eyes up close. Person looks tired and has bags under their eyes.">
+						</div>
+						<h2>Is anxiety more likely to occur in men or women?</h2>
+						<div class="question-div">
+							<label for="4a" class="button question-button">Women</label>
+							<input type="radio" name="question4" id="4a" value="correct">
+							<label for="4b" class="button question-button">Men</label>
+							<input type="radio" name="question4" id="4b" value="wrong">
+						</div>
+					</div>
+				</fieldset>
+				<div class="answer answer4 hidden">
+					<div class="card-inner-wrapper">
+						<div class="image image5">
+							<img src="images/image5.png" alt="Drawing of person's eyes up close. Person looks tired and has bags under their eyes.">
+						</div>
+						<h3 class="result"></h3>
+						<h2>Women</h2>
+						<p>In fact, women are twice as likely to experiece anxiety or an anxiety disorder than men. According to the <a href="http://www.anxietycanada.ca" target="_blank">Anxiety Disorders Association of Canada</a>, 30% of women will experience an anxiety disorder during their lifetime. <a href="http://www.anxietycanada.ca/english/youth/whatis.htm" target="_blank" class="source">Source</a></p>
+						<button class="next button">Next Question</button>
+					</div>
+				</div>
+			</section>
+			<section class="card section5 hidden">
+				<fieldset class="question question5">
+					<div class="card-inner-wrapper">
+						<div class="image image6">
+							<img src="images/image6.png" alt="Drawing of a person in shadow, walking with their head down looking depressed.">
+						</div>
+						<h2>People with anxiety are more likely to suffer from depression than those without anxiety.</h2>
+						<div class="question-div">
+							<label for="5a" class="button question-button">True</label>
+							<input type="radio" name="question5" id="5a" value="correct">
+							<label for="5b" class="button question-button">False</label>
+							<input type="radio" name="question5" id="5b" value="wrong">
+						</div>
+					</div>
+				</fieldset>
+				<div class="answer answer5 hidden">
+					<div class="card-inner-wrapper">
+						<div class="image image6">
+							<img src="images/image6.png" alt="Drawing of a person in shadow, walking with their head down looking depressed.">
+						</div>
+						<h3 class="result"></h3>
+						<h2>True</h2>
+						<p>It is very common for a person suffering from anxiety or an anxiety disorder to also suffer from depression. So common, that almost 50% of people diagnosed with Depression have also been diagnosed with an anxiety disorder at some point in their life. <a href="https://www.adaa.org/about-adaa/press-room/facts-statistics" target="_blank" class="source">Source</a></p>
+						<button class="submit button">Submit</button>
+					</div>
+				</div>
+			</section>
+		</form>
+		<section class="card score hidden">
+			<div class="card-inner-wrapper">
+				<h2>Your score is...</h2>
+				<h3></h3> <!-- score populates using JS --> 
+				<div class="restart">
+					<a href="index.html" class="button">Take the quiz again!</a>
+				</div>
+				<p>See below for additional resources.</p>
+				<div>
+					<h4>Spread the word!</h4>
+					<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Take%20the%20Anxiety%20Awareness%20Quiz!&url=http://www.kristenkriens.com/anxiety-quiz" target="_blank" data-size="large">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					<div class="fb-share-button" data-href="http://www.kristenkriens.com/anxiety-quiz" data-layout="button" data-size="large" data-mobile-iframe="false"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.kristenkriens.com%2Fanxiety-quiz&amp;src=sdkpreparse">Share</a></div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<aside class="resources">
+		<div class="wrapper">
+			<h4>Additional Resources</h4>
+			<ul>
+				<li><a href="http://www.camh.ca/en/hospital/health_information/a_z_mental_health_and_addiction_information/anxiety_disorders/Pages/Anxiety_Disorders.aspx" target="_blank">Centre for Addiction and Mental Health - Anxiety Disorders</a></li>
+				<li><a href="http://www.cmha.ca/mental_health/understanding-anxiety-disorders/#.V5o1kJMrKAx" target="_blank">Canadian Mental Health Association - Anxiety Disorders</a></li>
+				<li><a href="http://www.anxietydisordersontario.ca" target="_blank">Anxiety Disorders Association of Ontario</a></li>
+				<li><a href="http://www.anxietycanada.ca" target="_blank">Anxiety Disorders Association of Canada</a></li>
+				<li><a href="https://www.adaa.org" target="_blank">Anxiety and Depression Association of America</a></li>
+			</ul>
+		</div>
+	</aside>
+	<footer>
+		<div class="wrapper">
+			Coded by <a href="http://kristenkriens.com/" target="_blank">Kristen Kriens</a> and <a href="http://lindsiecanton.com/" target="_blank">Lindsie Canton</a>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js" integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
